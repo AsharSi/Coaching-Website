@@ -12,7 +12,7 @@ This is a simple demo website for a coaching institute, created using Bootstrap.
 
 1. Clone this repository to your local machine:
 
-  git clone https://github.com/AsharSi/Coaching-Website.git
+-git clone https://github.com/AsharSi/Coaching-Website.git
 
 2. Open the project in your favorite code editor.
 
