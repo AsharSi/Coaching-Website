@@ -4,7 +4,15 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background-color: #46389b;
+    color: #fff;
+}
+
+
 body {
+    background-color: #f5f5f5;
+    color: #1f1f1f;
     font-family: 'Zilla Slab  ', 'Segoe UI', 'Poppins', sans-serif;
     text-shadow: 0.4px 0.4px 0.4px rgba(0, 0, 0, 0.4);
 }
@@ -19,7 +27,7 @@ header {
 }
 
 nav {
-    min-height: 14vh;
+    min-height: 100px;
 }
 
 nav h1 {
@@ -32,7 +40,6 @@ header .navbar {
     padding: 0 10%;
     position: sticky;
     top: 0;
-    z-index: 10;
 }
 
 
@@ -51,11 +58,15 @@ nav ul li {
     /* position: relative; */
 }
 
-
+.nav-space {
+    height: 100px;
+}
 
 .section__carousel {
-    margin-top: 14vh;
-    padding: 0 15%;
+    /* margin-top: 0 auto; */
+    /* background-color: red; */
+    /* padding: 0 15%; */
+    max-width: 1000px;
 }
 
 #carouselExampleIndicators {
@@ -319,4 +330,74 @@ footer h5 {
     margin-bottom: 10px;
     text-transform: uppercase;
 
+}
+
+@media screen and (max-width: 767px) {
+    .section__carousel {
+        padding: 0 1%;
+    }
+
+    .section__signpost .signpost_row1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__signpost .signpost_row2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-container .signpost_row1_box {
+        height: 200px;
+    }
+
+    .image-container .signpost_row2_box {
+        height: 300px;
+    }
+
+    .section__heading h1 {
+        font-size: 30px;
+    }
+
+    #section_gmap .gmap_box {
+        width: 250px;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #section_gmap .gmap_box h4 {
+        font-size: 30px;
+    }
+
+    #section_gmap .gmap_box h3 {
+        font-size: 20px;
+    }
+
+    #section_gmap .gmap_box p {
+        font-size: 15px;
+    }
+
+    .section__end h1 {
+        font-size: 30px;
+    }
+
+    .section__end .end__para {
+        font-size: 17px;
+    }
+
+    footer .container {
+        padding: 0 10px;
+    }
+
+    footer h5 {
+        font-size: 20px;
+    }
 }
